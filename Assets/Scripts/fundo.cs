@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class chao : MonoBehaviour
+public class fundo : MonoBehaviour
 {
     [SerializeField]
     private float velocidade = 0.6f;
@@ -23,4 +23,4 @@ public class chao : MonoBehaviour
         float deslocamento = Mathf.Repeat(this.velocidade * Time.time, tamanhoDaImagemNaCena);
         this.transform.position = this.posicaoInicial + Vector3.left * deslocamento;
     }
-} 
+}

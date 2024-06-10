@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class GeradorDeObstaculos : MonoBehaviour
 {
-    //Onde gerar? Posição do gerador
-    //Quando gerar? tempo
-    [SerializeField]
-    private GameObject modeloObstaculo;
-
     [SerializeField]
     private float tempoParaGerar = 3;
+
     private float cronometro;
 
+    [SerializeField]
+    private GameObject modeloObstaculo;
 
     private void Awake()
     {
@@ -28,6 +26,5 @@ public class GeradorDeObstaculos : MonoBehaviour
             GameObject.Instantiate(this.modeloObstaculo, this.transform.position, Quaternion.identity);
             this.cronometro = this.tempoParaGerar;
         }
-        
     }
 }

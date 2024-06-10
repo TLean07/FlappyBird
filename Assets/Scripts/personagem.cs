@@ -15,8 +15,10 @@ public class personagem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(Time.deltaTime);
         if(Input.GetMouseButtonDown(0))
         {
+            Debug.Log("Clicou");
             this.Impulsionar();
         }
     }
