@@ -10,7 +10,7 @@ public class obstaculo : MonoBehaviour
     [SerializeField]
     private float variacaoposicaoY;
     private Vector3 posicaoPassaro;
-    private bool pontuei; 
+    private bool pontuei; Handheld   b   
 
     private void Awake()
     {
